@@ -10,7 +10,7 @@ If you have any suggestions or would like to contribute to this cheatsheet, plea
 
 Happy coding!
 
-## Basic HTML5 Structure
+## **Basic HTML5 Structure**
 
 An HTML5 document follows a basic structure known as the HTML5 boilerplate. Here's an example of how to set up a basic HTML5 document:
 
@@ -54,7 +54,7 @@ Explanation:
 `<!-- Your content goes here -->`: This is a placeholder comment where you can insert your actual content, including various HTML elements and tags.
 
 
-### Document Structure
+## **Document Structure**
 
 HTML5 introduces new semantic elements that help structure the content of a webpage. These elements provide better accessibility and convey the meaning of the content. Here are some commonly used structural elements:
 
@@ -116,7 +116,7 @@ Explanation:
 
 These structural elements help organize the content of your HTML document, making it more meaningful and easier to understand for both humans and assistive technologies. Remember to place your actual content within each element accordingly.
 
-### Text Formatting
+## **Text Formatting**
 
 HTML5 provides several tags and attributes for text formatting. Here are some commonly used ones:
 
@@ -173,7 +173,7 @@ Explanation:
 
 These tags and attributes help structure and format text content within your HTML document. Use them according to the desired effect and visual presentation you want to achieve. Remember to replace the example text with your actual content.
 
-### Lists
+## **Lists**
 
 HTML5 provides tags for creating different types of lists. Here are examples of unordered lists, ordered lists, and description lists:
 
@@ -229,7 +229,7 @@ Explanation:
 
 Use these list tags to structure and organize your content in a list format according to your specific needs. Replace the example items and descriptions with your own content.
 
-### Links
+## **Links**
 
 HTML5 provides the `<a>` tag for creating hyperlinks. Here are some examples of different types of links:
 
@@ -269,7 +269,7 @@ Explanation:
 
 Use the <a> tag with the appropriate href attribute to create various types of links in your HTML document. Customize the URLs, phone numbers, or email addresses to fit your specific use case.
 
-### Images
+## **Images**
 
 HTML5 provides the <img> tag for displaying images. Here's an example of how to insert an image along with <figure> and <figcaption> for image captions:
 
@@ -303,7 +303,7 @@ Explanation:
 Replace "image.jpg" with the actual URL or file path of your image. Additionally, provide appropriate descriptions and captions for your images to enhance accessibility and provide context.
 
 
-### Forms
+## **Forms**
 
 HTML5 provides the <form> tag for creating forms. Here are examples of different form elements and their usage:
 
@@ -389,7 +389,7 @@ Explanation:
 These examples demonstrate different form elements that you can use to collect and submit user input. Customize the labels, names, and values according to your specific form requirements.
 
 
-### Tables
+## **Tables**
 
 HTML5 provides the `<table>`, `<tr>`, `<th>`, and `<td>` tags for creating tables. Here's an example of how to create a basic table:
 
@@ -438,7 +438,7 @@ Within the `<table>` element, you can create multiple `<tr>` elements to represe
 Customize the content within the table cells to match your data and structure the table accordingly. You can also use additional attributes like colspan and rowspan to merge cells or span them across multiple columns or rows as needed.
 
 
-### Multimedia
+## **Multimedia**
 
 HTML5 provides tags for embedding videos and audio. Here's an example of how to embed videos and audio in HTML5:
 
@@ -475,7 +475,7 @@ The content placed between the opening and closing tags of the <video> and <audi
 Replace "video.mp4" and "audio.mp3" with the actual URLs or file paths of your video and audio files, respectively. Adjust the dimensions of the video player as needed.
 
 
-### Semantic Elements
+## **Semantic Elements**
 
 HTML5 introduces semantic elements that provide meaning and structure to the content. Here are some commonly used semantic elements:
 
@@ -530,7 +530,7 @@ Explanation:
 
 These semantic elements help structure and organize the content of your HTML document, making it more meaningful, accessible, and search engine-friendly. Use them to provide clearer semantics and improve the overall structure of your web pages.
 
-### Miscellaneous
+## **Miscellaneous**
 
 HTML5 provides various elements and features for additional functionality and customization. Here are some commonly used miscellaneous elements:
 
@@ -573,7 +573,91 @@ Explanation:
 These miscellaneous elements and features provide additional flexibility and customization options for your HTML document. Use them as needed to enhance your webpage's functionality, structure, and styling.
 
 
-### Additional Resources
+## **Responsive Design**
+Responsive design allows web pages to adapt and provide an optimal viewing experience across different devices and screen sizes. Here are some techniques to achieve responsive design in HTML5:
+
+### Media Queries
+Media queries allow you to apply different styles based on the characteristics of the device or viewport. Here's an example of a media query that targets devices with a maximum width of 600 pixels:
+
+``` css
+@media (max-width: 600px) {
+  /* Styles for devices with a maximum width of 600 pixels */
+  body {
+    font-size: 14px;
+  }
+}
+```
+
+Explanation:
+
+`@media (max-width: 600px)`: This media query targets devices with a maximum width of 600 pixels. You can adjust the max-width value to target different screen sizes.
+`body { font-size: 14px; }`: This CSS rule applies a font size of 14 pixels to the body element when the device width is 600 pixels or less.
+
+### Viewport Meta Tag
+
+The viewport meta tag helps control the dimensions and scaling of the webpage on mobile devices. Include the following meta tag in the <head> section of your HTML document:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+```
+
+Explanation:
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`: This meta tag sets the width of the viewport to the device width `(width=device-width`) and sets the initial zoom level to 1` (initial-scale=1.0)`.
+
+### Responsive Images
+
+To ensure images scale and adapt to different screen sizes, you can use the max-width: 100% CSS rule. For example:
+
+``` css
+img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+Explanation:
+
+`max-width: 100%`: This CSS rule ensures that the image width does not exceed the width of its container, allowing it to scale down as needed.
+`height: auto;`: This rule maintains the aspect ratio of the image by automatically adjusting the height according to the scaled width.
+By using media queries, the viewport meta tag, and applying responsive image styles, you can create web pages that are visually appealing and optimized for different screen sizes and devices.
+
+Feel free to customize the example code and add more advanced techniques or examples based on your specific responsive design needs.
+
+## **Audio and Video Controls**
+
+HTML5 provides built-in controls for audio and video elements. Here's an example of how to use them:
+
+### Audio Controls
+
+``` html
+<audio src="audio.mp3" controls>
+  Your browser does not support the audio element.
+</audio>
+```
+Explanation:
+
+<audio src="audio.mp3" controls>: The <audio> tag is used to embed audio content. The src attribute specifies the URL or file path of the audio file. The controls attribute enables the default audio player controls, such as play/pause, volume, and progress bar.
+Your browser does not support the audio element.: This text is displayed if the browser does not support the <audio> tag.
+
+### Video Controls
+
+``` html
+<video src="video.mp4" controls width="640" height="360">
+  Your browser does not support the video element.
+</video>
+```
+Explanation:
+
+`<video src="video.mp4" controls width="640" height="360">`: The `<video>` tag is used to embed video content. The src attribute specifies the URL or file path of the video file. The controls attribute enables the default video player controls. You can also specify the width and height attributes to set the dimensions of the video player.
+Your browser does not support the video element.: This text is displayed if the browser does not support the `<video>` tag.
+By using the controls attribute, the audio and video elements display the default player controls, allowing users to play, pause, adjust volume, and seek through the media content. The fallback message within the opening and closing tags is displayed for browsers that do not support the respective media element.
+
+Replace "audio.mp3" and "video.mp4" with the actual URLs or file paths of your audio and video files, respectively. Adjust the dimensions of the video player as needed.
+
+
+
+## Additional Resources
 
 Here are some additional resources and references for learning more about HTML5:
 
