@@ -1,4 +1,4 @@
-# HTML Cheatsheet
+# HTML Cheatsheet [![My Skills](https://skillicons.dev/icons?i=html&theme=dark)](https://skillicons.dev)
 
 Welcome to my HTML5 Cheatsheet repository! This repository serves as a comprehensive reference guide for HTML5, providing a collection of HTML tags, elements, and their usage. Whether you're a beginner learning HTML or an experienced developer looking for a quick reference, this cheatsheet has got you covered.
 
